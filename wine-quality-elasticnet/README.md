@@ -53,7 +53,7 @@ https://github.com/mlflow/mlflow/tree/master/examples/sklearn_elasticnet_wine
     ```json
     [33.04794191637013]
     ```
-    d) Deploy to Sagemaker
+    d) Deploy to Sagemaker  
     Fill in the details in elasticnet_deploy_aws.py and run the file
     ```
     python elasticnet_deploy_aws.py
