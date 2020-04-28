@@ -28,7 +28,7 @@ https://github.com/mlflow/mlflow/tree/master/examples/sklearn_elasticnet_wine
     ```
     c) Run locally to test the model  
     ```bash
-        mlflow sagemaker run-local -m trained_model
+    mlflow sagemaker run-local -m trained_model
     ```  
     You should see this:
     ```bash
@@ -63,4 +63,19 @@ https://github.com/mlflow/mlflow/tree/master/examples/sklearn_elasticnet_wine
 
 
 2. Azure ML:  
-T.B.D.
+    a) login to azure cli using ```az login```  
+    b) Fill in the details in elasticnet_deploy_azure.py and run this python file.  
+    c) You should be able to call the created endpoint in the exact same way as above.  
+    ```json
+    {
+	"columns":["alcohol", "chlorides", "citric acid", "density", "fixed acidity", "free sulfur dioxide", "pH", "residual sugar", "sulphates", "total sulfur dioxide", "volatile acidity"],
+	
+	"data":[[12.8, 0.029, 0.48, 0.98, 6.2, 29, 3.33, 1.2, 0.39, 75, 0.66]]
+    }
+    ```
+    Headers should be:
+    ```json
+    {
+        "Content-Type": "application/json",
+    }
+    ```
