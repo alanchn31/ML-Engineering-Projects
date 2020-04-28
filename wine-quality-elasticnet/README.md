@@ -15,3 +15,5 @@ https://github.com/mlflow/mlflow/tree/master/examples/sklearn_elasticnet_wine
 
 ## Running this MLFlow Project:
 ---
+* Install mlflow using ```bash pip install mlflow ``` if you have not done so
+* Run: mlflow run https://github.com/alanchn31/ML-Engineering-Projects/Wine%20Quality%20(ElasticNet).git
